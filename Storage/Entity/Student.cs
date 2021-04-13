@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,16 +9,19 @@ namespace WebApplication1.Storage.Entity
 {
     public class Student
     {
-        public Guid Id { get; set; }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
+
+        [Required]
         public string Name { get; set; }
+
+        [Required]
         public string LastName { get; set; }
+
+        [Required]
+        public int GroupId { get; set; }
+        [ForeignKey(nameof(GroupId))]
         public Group Group { get; set; }
-        public Student(Guid id, string name, string lastName, Group group)
-        {
-            Id = id;
-            Name = name;
-            LastName = lastName;
-            Group = group;
-        }
     }
 }
