@@ -27,10 +27,10 @@ namespace WebApplication1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-           // services.AddSingleton<ExampleContext>();
+           // services.AddSingleton<ExampleContext>(); 
             services.AddTransient<IStudentManager, StudentManager>();
 
-            services.AddDbContext<UniversityContext>(options => options.UseSqlServer("Server-localhost\\SQL SERVER;Database-UniveraityDataBase;Trusted_Connection-True;"));
+            services.AddDbContext<UniversityContext>(options => options.UseSqlServer("Server=LAPTOP-H4SHKE98;Database=UniveraityDataBase;Trusted_Connection=True;"));
 
         }
 

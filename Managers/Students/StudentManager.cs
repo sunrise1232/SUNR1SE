@@ -9,14 +9,14 @@ namespace WebApplication1.Managers.Students
 {
     public class StudentManager : IStudentManager
     {
-        private ExampleContext _context;
+        private UniversityContext _context;
 
         //public StudentManager()
         //{
         //    _context = new ExampleContext();
         //}
 
-        public StudentManager(ExampleContext context)
+        public StudentManager(UniversityContext context)
         {
             _context = context;
         }
@@ -30,7 +30,7 @@ namespace WebApplication1.Managers.Students
 
         public ICollection<Student> GetAll()
         {
-            return _context.Students;
+            return _context.Students.ToList();
         }
 
         public ICollection<Student> GetStudentsByGroup(int groupId)
