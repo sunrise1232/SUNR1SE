@@ -21,7 +21,7 @@ namespace WebApplication1.Managers.Students
             _context = context;
         }
 
-        public void Delete(Guid id)
+        public void Delete(int id)
         {
             var student = _context.Students.FirstOrDefault(st => st.Id == id);
             if (student != null)
@@ -33,7 +33,7 @@ namespace WebApplication1.Managers.Students
             return _context.Students;
         }
 
-        public ICollection<Student> GetStudentsByGroup(Guid groupId)
+        public ICollection<Student> GetStudentsByGroup(int groupId)
         {
             return _context.Students.Where(st => st.Group.Id == groupId).ToList();
         }

@@ -24,7 +24,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost]
-        public IActionResult DeleteStudent(Guid studentId)
+        public IActionResult DeleteStudent(int studentId)
         {
             _manager.Delete(studentId);
             return RedirectToAction(nameof(Index));
