@@ -9,7 +9,7 @@ namespace WebApplication1.Managers.Students
     public interface IStudentManager
     {
         ICollection<Student> GetAll();
-        ICollection<Student> GetStudentsByGroup(Guid groupId);
-        void Delete(Guid id);
+        ICollection<Student> GetStudentsByGroup(int groupId);
+        void Delete(int id);
     }
 }
