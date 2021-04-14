@@ -7,16 +7,13 @@ using System.Threading.Tasks;
 
 namespace WebApplication1.Storage.Entity
 {
-    public class Group
+    public class Client
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-
-        [Required]
-        [MaxLength(50)]
         public string Name { get; set; }
-
-        public string Description { get; set; }
+        public string LastName { get; set; }
+        public string MiddleName { get; set; }
+        public string Address { get; set; }
+        public string PhoneNumber { get; set; }
     }
 }

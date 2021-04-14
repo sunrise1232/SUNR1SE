@@ -7,21 +7,15 @@ using System.Threading.Tasks;
 
 namespace WebApplication1.Storage.Entity
 {
-    public class Student
+    public class Staff
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-
-        [Required]
         public string Name { get; set; }
-
-        [Required]
         public string LastName { get; set; }
-
-        [Required]
-        public int GroupId { get; set; }
-        [ForeignKey(nameof(GroupId))]
-        public Group Group { get; set; }
+        public string MiddleName { get; set; }
+        public string Post { get; set; }
+        public string Salary { get; set; }
+        public string Address { get; set; }
+        public string PhoneNumber { get; set; }
     }
 }
