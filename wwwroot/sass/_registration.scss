@@ -1,0 +1,28 @@
+.registration {
+    margin-top: 80px;
+}
+
+.registration__inner {
+    display: flex;
+}
+
+
+
+
+.registration__form {
+    width: 50%;
+    position: relative;
+    align-items: end;
+
+    .form__input {
+        min-width: 320px;
+    }
+    
+    .form__input:focus {
+        min-width: 320px;
+    }
+}
+
+.registration__right {
+    width: 50%;
+}

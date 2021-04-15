@@ -10,9 +10,10 @@
 
 .service__descr {
     font-size: 20px;
+    opacity: 0.8;
 }
 
-.service__left {
+.service__right {
     height: 100%;
     position: relative;
     margin-left: 50px;
@@ -31,4 +32,9 @@
         display: block;
         max-width: 250px;
     }
+}
+
+
+.service__wrapper {
+    position: relative;
 }
