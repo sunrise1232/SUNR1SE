@@ -112,7 +112,6 @@ D:\3333\SUNR1SE\obj\Debug\netcoreapp3.1\WebApplication1.Views.pdb
 D:\3333\SUNR1SE\obj\Debug\netcoreapp3.1\WebApplication1.csproj.CopyComplete
 D:\3333\SUNR1SE\obj\Debug\netcoreapp3.1\WebApplication1.genruntimeconfig.cache
 D:\3333\SUNR1SE\obj\Debug\netcoreapp3.1\WebApplication1.csprojAssemblyReference.cache
-C:\Users\Соня\Desktop\sunrise\SUNR1SE\obj\Debug\netcoreapp3.1\WebApplication1.csprojAssemblyReference.cache
 C:\Users\Соня\Desktop\sunrise\SUNR1SE\obj\Debug\netcoreapp3.1\WebApplication1.AssemblyInfoInputs.cache
 C:\Users\Соня\Desktop\sunrise\SUNR1SE\obj\Debug\netcoreapp3.1\WebApplication1.AssemblyInfo.cs
 C:\Users\Соня\Desktop\sunrise\SUNR1SE\obj\Debug\netcoreapp3.1\WebApplication1.csproj.CoreCompileInputs.cache
@@ -318,3 +317,5 @@ C:\SUNR1SE\obj\Debug\netcoreapp3.1\WebApplication1.pdb
 C:\SUNR1SE\obj\Debug\netcoreapp3.1\WebApplication1.genruntimeconfig.cache
 C:\SUNR1SE\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Index.cshtml.g.cs
 C:\SUNR1SE\obj\Debug\netcoreapp3.1\Razor\Views\Registration\Index.cshtml.g.cs
+C:\Users\Соня\Desktop\sunrise\SUNR1SE\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Index.cshtml.g.cs
+C:\Users\Соня\Desktop\sunrise\SUNR1SE\obj\Debug\netcoreapp3.1\Razor\Views\Registration\Index.cshtml.g.cs

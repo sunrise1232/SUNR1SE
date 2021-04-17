@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApplication1.Storage;
 
 namespace WebApplication1
 {
@@ -25,10 +26,9 @@ namespace WebApplication1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-           // services.AddSingleton<ExampleContext>(); 
             //services.AddTransient<IStudentManager, StudentManager>();
 
-            //services.AddDbContext<UniversityContext>(options => options.UseSqlServer("Server=LAPTOP-H4SHKE98;Database=SunriseDatabase;Trusted_Connection=True;"));
+            services.AddDbContext<PeopleContext>(options => options.UseSqlServer("Server=LAPTOP-H4SHKE98;Database=SunriseDatabase;Trusted_Connection=True;"));
 
         }
 
