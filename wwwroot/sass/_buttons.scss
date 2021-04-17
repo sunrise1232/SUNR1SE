@@ -11,7 +11,6 @@
 
     &:hover {
         color: #fff;
-        font-weight: 400;
         background-color: $blue;
     }
 }
@@ -19,6 +18,7 @@
 .form__button {
     font-size: 15px;
     min-width: 250px;
+    padding: 10px 20px;
     color: $green;
     border-color: $green;
 
@@ -26,5 +26,26 @@
         background-color: $green;
     }
 
+}
+
+.tour__button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 21;
+    text-transform: none;
+}
+
+.registration__button {
+    margin-top: 50px;
+    min-width: 320px;
+    color: $green;
+    border-color: $green;
+    text-transform: none;
+
+    &:hover {
+        background-color: $green;
+    }
+    
 }
 
