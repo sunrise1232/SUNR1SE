@@ -52,5 +52,23 @@
 }
 
 
+.carousel, .modalCarousel {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel__item img {
+    display: block;
+    width: 100%;
+}
+
+.prevArrow, .nextArrow {
+    border: none;
+    background-color: transparent;
+    padding: 0 20px;
+    font-size: 20px;
+    color: $black;
+}
+
 
 

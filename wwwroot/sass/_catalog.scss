@@ -79,17 +79,14 @@
     padding-right: 20px;
 }
 
-.tour__images {
+.tour__carousel {
     max-width: 100%;
-    margin-bottom: 40px;
-
-    img {
-        width: 100%;
-    }
+    margin-bottom: 30px;
 }
 
 .tour__title {
     font-size: 30px;
+    margin-bottom: 20px;
 }
 
 .tour__descr {
@@ -111,13 +108,14 @@
 
     i {
         margin-left: 6px;
-        display: none;
-    }
-
-    i.active {
-        display: block;
-    }
+        transition: 0.1s linear all;
+    } 
     
+    &:hover {
+        i {
+            transform: scale(1.11);
+        }
+    }
 }
 
 .tour__left {
