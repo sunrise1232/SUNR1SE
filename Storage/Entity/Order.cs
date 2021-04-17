@@ -30,7 +30,7 @@ namespace WebApplication1.Storage.Entity
 
         //[DatabaseGenerated()]
         [Required]
-        //генерация времени?
+        //генерация даты?
         public string Date { get; set; }
     }
 }
