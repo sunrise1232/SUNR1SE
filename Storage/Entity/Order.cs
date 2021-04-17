@@ -9,7 +9,6 @@ namespace WebApplication1.Storage.Entity
 {
     public class Order
     {
-<<<<<<< HEAD
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
@@ -29,23 +28,9 @@ namespace WebApplication1.Storage.Entity
         [ForeignKey(nameof(StaffId))]
         public Staff Staff { get; set; }
 
-        [DatabaseGenerated()]
+        //[DatabaseGenerated()]
+        [Required]
+        //генерация времени?
         public string Date { get; set; }
-=======
-        public int Id { get; set; }
-
-        public int TourId { get; set; }
-        public Tour Tour { get; set; }
-
-        public int ClientId { get; set; }
-        public Client Client { get; set; }
-
-        public int StaffId { get; set; }
-        public Staff Staff { get; set; }
-
-        public string AcceptDate { get; set; }
-
-
->>>>>>> 7c37840c5fe9cf25b38322331773461adae01be2
     }
 }
