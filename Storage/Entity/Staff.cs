@@ -15,7 +15,6 @@ namespace WebApplication1.Storage.Entity
         public string MiddleName { get; set; }
         public string Post { get; set; }
         public string Salary { get; set; }
-        public string Address { get; set; }
         public string PhoneNumber { get; set; }
     }
 }

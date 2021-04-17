@@ -28,7 +28,7 @@ namespace WebApplication1
            // services.AddSingleton<ExampleContext>(); 
             //services.AddTransient<IStudentManager, StudentManager>();
 
-            //services.AddDbContext<UniversityContext>(options => options.UseSqlServer("Server=LAPTOP-H4SHKE98;Database=UniveraityDataBase;Trusted_Connection=True;"));
+            //services.AddDbContext<UniversityContext>(options => options.UseSqlServer("Server=LAPTOP-H4SHKE98;Database=SunriseDatabase;Trusted_Connection=True;"));
 
         }
 
