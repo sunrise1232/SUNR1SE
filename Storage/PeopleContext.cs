@@ -15,7 +15,6 @@ namespace WebApplication1.Storage
 
             }
        public DbSet<Client> clients { get; set; }
-        public object Clients { get; internal set; }
         public DbSet<Hotel> hotels { get; set; }
         public DbSet<Order> orders { get; set; }
         public DbSet<Provider> providers { get; set; }

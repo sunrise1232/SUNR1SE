@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace WebApplication1.Storage.Entity
 {
@@ -28,9 +29,8 @@ namespace WebApplication1.Storage.Entity
         [ForeignKey(nameof(StaffId))]
         public Staff Staff { get; set; }
 
-        //[DatabaseGenerated()]
         [Required]
-        //генерация даты?
+        [DatabaseGenerated((DatabaseGeneratedOption)DataType.Date)]//?
         public string Date { get; set; }
     }
 }

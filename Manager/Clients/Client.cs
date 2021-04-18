@@ -24,14 +24,15 @@ namespace WebApplication1.Managers.Clients
         }
 
        
-        public void AddClient(string name, string middlename, string lastname, string phonenumber, string login, string password)
+        public void AddClient()
         {
-            var newClient = _ContextClient.Client.FirstOrDefault(st => st.Login != login);
-             //if(login.Length<15 && login.Length > 6)
-             //   if (password.Length < 15 && password.Length > 6)
-                   _ContextClient.Clients.Add(newClient);
-               
+            var newClient = _ContextClient.clients.FirstOrDefault(st => st.Login != login);
+            if(login.Length<15 && login.Length > 6)
+               if (password.Length < 15 && password.Length > 6)
+                  _ContextClient.Clients.Add(newClient);
+            //_ContextClient.Clients.Add(client);
         }
+
         public void AuthorizationClient(string login, string password)
         {
             var oldClient = _ContextClient.Client.FirstOrDefault(st => st.Login == login);
