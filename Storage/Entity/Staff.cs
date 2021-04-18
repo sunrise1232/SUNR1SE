@@ -24,8 +24,24 @@ namespace WebApplication1.Storage.Entity
         [MaxLength(50)]
         public string MiddleName { get; set; }
 
+        [Required]
+        [MaxLength(50)]
+        public string Login { get; set; }
+
+        [Required]
+        [MaxLength(50)]
+        public string Password { get; set; }
+
+        [Required]
+        [MaxLength(50)]
         public string Post { get; set; }
+
+        [Required]
+        [MaxLength(50)]
         public string Salary { get; set; }
+
+        [Required]
+        [MaxLength(50)]
         public string PhoneNumber { get; set; }
     }
 }
