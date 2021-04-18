@@ -24,7 +24,8 @@ namespace WebApplication1.Storage.Entity
         public Hotel Hotel { get; set; }
 
         [Required]
-        public int AirlineId { get; set; }
-
+        public int FlightId { get; set; }
+        [ForeignKey(nameof(FlightId))]
+        public Flight Flight { get; set; }
     }
 }

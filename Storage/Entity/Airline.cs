@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WebApplication1.Storage.Entity
 {
-    public class Town
+    public class Airline
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -16,10 +16,5 @@ namespace WebApplication1.Storage.Entity
         [Required]
         [MaxLength(50)]
         public string Name { get; set; }
-
-        [Required]
-        public int RegionId { get; set; }
-        [ForeignKey(nameof(RegionId))]
-        public Region Region { get; set; }
     }
 }
