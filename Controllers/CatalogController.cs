@@ -6,20 +6,23 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using WebApplication1.Models;
+using WebApplication1.Storage;
 
 namespace WebApplication1.Controllers
 {
     public class CatalogController : Controller
     {
-        private readonly ILogger<CatalogController> _logger;
+        private readonly TourContext _context;
 
-        public CatalogController(ILogger<CatalogController> logger)
+        public CatalogController(TourContext context)
         {
-            _logger = logger;
+            _context = context;
         }
-
         public IActionResult Index()
         {
+            var tours = _context.tours;
+            ViewBag.tours = tours;
+            
             return View();
         }
 

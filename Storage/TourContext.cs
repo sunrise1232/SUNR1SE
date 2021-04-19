@@ -7,14 +7,14 @@ using WebApplication1.Storage.Entity;
 
 namespace WebApplication1.Storage
 {
-    public class PeopleContext:DbContext
+    public class TourContext:DbContext
     {
         
-            public PeopleContext(DbContextOptions<PeopleContext> options) : base(options)
-            {
+        public TourContext(DbContextOptions<TourContext> options) : base(options)
+        {
 
-            }
-       public DbSet<Client> clients { get; set; }
+        }
+        public DbSet<Client> clients { get; set; }
         public DbSet<Hotel> hotels { get; set; }
         public DbSet<Order> orders { get; set; }
         public DbSet<Provider> providers { get; set; }

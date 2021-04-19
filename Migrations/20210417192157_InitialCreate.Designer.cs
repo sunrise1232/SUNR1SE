@@ -8,7 +8,7 @@ using WebApplication1.Storage;
 
 namespace WebApplication1.Migrations
 {
-    [DbContext(typeof(PeopleContext))]
+    [DbContext(typeof(TourContext))]
     [Migration("20210417192157_InitialCreate")]
     partial class InitialCreate
     {

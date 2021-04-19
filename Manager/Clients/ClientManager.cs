@@ -10,7 +10,7 @@ namespace WebApplication1.Managers.Clients
 {
     public class ClientManager: IClientManager
     {
-        private PeopleContext _ContextClient;
+        private TourContext _ContextClient;
 
         /* public Client()
           {
@@ -18,7 +18,7 @@ namespace WebApplication1.Managers.Clients
           }
         */
 
-        public ClientManager(PeopleContext context)
+        public ClientManager(TourContext context)
         {
             _ContextClient = context;
         }

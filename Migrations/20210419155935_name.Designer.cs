@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebApplication1.Storage;
 
 namespace WebApplication1.Migrations
 {
     [DbContext(typeof(TourContext))]
-    partial class PeopleContextModelSnapshot : ModelSnapshot
+    [Migration("20210419155935_name")]
+    partial class name
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -274,10 +276,6 @@ namespace WebApplication1.Migrations
 
                     b.Property<int>("HotelId")
                         .HasColumnType("int");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("ServiceId")
                         .HasColumnType("int");

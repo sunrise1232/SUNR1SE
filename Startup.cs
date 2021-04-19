@@ -28,7 +28,7 @@ namespace WebApplication1
             services.AddControllersWithViews();
             //services.AddTransient<IStudentManager, StudentManager>();
 
-            services.AddDbContext<PeopleContext>(options => options.UseSqlServer("Server=LAPTOP-H4SHKE98;Database=SunriseDatabase;Trusted_Connection=True;"));
+            services.AddDbContext<TourContext>(options => options.UseSqlServer("Server=DESKTOP-FKSF9SO;Database=SunriseDatabase;Trusted_Connection=True;"));
 
         }
 
