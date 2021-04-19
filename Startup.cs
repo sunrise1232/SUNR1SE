@@ -29,7 +29,7 @@ namespace WebApplication1
             //services.AddTransient<IStudentManager, StudentManager>();
 
             services.AddDbContext<TourContext>(options => options.UseSqlServer("Server=DESKTOP-FKSF9SO;Database=SunriseDatabase;Trusted_Connection=True;"));
-
+            //services.AddDbContext<PeopleContext>(options => options.UseSqlServer("Server=LAPTOP-H4SHKE98;Database=SunriseDatabase;Trusted_Connection=True;"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
