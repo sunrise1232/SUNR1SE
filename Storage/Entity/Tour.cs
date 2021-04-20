@@ -16,7 +16,6 @@ namespace WebApplication1.Storage.Entity
         [Required]
         public string Name { get; set; }
 
-
         [Required]
         public int ServiceId { get; set; }
         [ForeignKey(nameof(ServiceId))]
